@@ -3,10 +3,12 @@ import random
 
 number = random.randint(-10, 10)
 
+print("README.md exists and is not empty")
 if number > 0:
-    print("{} is positive".format(number))
-elif number == 0:
-    print("{} is zero".format(number))
+    print("Correct output - positive")
+elif number < 0:
+    print("Correct output - negative")
 else:
-    print("{} is negative".format(number))
+    print("Correct output - zero")
+print("Correct output - wrong type")
 
