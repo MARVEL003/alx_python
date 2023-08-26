@@ -1,13 +1,9 @@
 #!/usr/bin/python3
 import random
-
 number = random.randint(-10, 10)
-
-# Print the number and its nature
 if number > 0:
-    print(number, "is positive")
-elif number == 0:
-    print(number, "is zero")
+    print(f"{number} is positive")
+elif number < 0:
+    print(f"{number} is negative")
 else:
-    print(number, "is negative")
-
+    print(f"{number} is zero")
