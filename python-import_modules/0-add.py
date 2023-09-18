@@ -8,5 +8,5 @@ def result():
     total = add(a, b)
     print("{} + {} = {}".format(a, b, total))
 
-    if_name_=="__main__":
+if __name__=="__main__":
         result()
