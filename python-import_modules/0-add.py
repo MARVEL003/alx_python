@@ -1,11 +1,9 @@
-    if __name__ == "__main__":
-    from add_0 import add
-
+def result():
     a = 1
     b = 2
 
-    # Calculate the sum using the imported function
-    result = add(a, b)
+    total = add(a, b)
+    print("{} + {} = {}".format(a, b, total))
 
-    # Print the result with string formatting
-    print("{} + {} = {}".format(a, b, result))
+    if_name_=="__main__":
+        result()
