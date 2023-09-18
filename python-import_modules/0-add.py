@@ -1,3 +1,6 @@
+from add_0 import add
+
+
 def result():
     a = 1
     b = 2
