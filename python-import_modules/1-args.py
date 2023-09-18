@@ -1,6 +1,6 @@
 import sys
 
-if_name_=="__main__":
+if__name__=="__main__":
     args = sys.argv[1:]
     num_args = len(args)
 
