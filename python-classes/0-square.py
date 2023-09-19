@@ -1,3 +1,5 @@
+"""This module is mostly on the __size which is considered private when used due to the double underscore"""
+
 class Square:
     """This a class considered as a parent to all instances being made in this module """
 
