@@ -38,4 +38,4 @@ class BaseGeometry(metaclass=BaseGeometryMetaClass):
         Raises:
             NotImplementedError: This method is not implemented in the base class.
         """
-        raise Exception("area() is not impleme
+        raise Exception("area() is not implemented")
