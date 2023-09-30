@@ -1,0 +1,1 @@
+Let's get started: We will be looking at API's. API stands for Application Programming Interface. Stay with me.
