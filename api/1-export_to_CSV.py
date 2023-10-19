@@ -9,7 +9,7 @@ if len(sys.argv) != 2:
 employee_id = sys.argv[1]
 url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
 response = requests.get(url)
-employee_name = response.json().get("name")
+employee_name = response.json().get("username")
 
 if not employee_name:
     print(f"No employee found with ID {employee_id}")
@@ -31,9 +31,11 @@ for todo in todos:
 # Export to CSV
 csv_filename = f'{employee_id}.csv'
 with open(csv_filename, 'w', newline='') as csvfile:
-    csv_writer = csv.writer(csvfile)
+    csv_writer = csv.writer(csvfile, delimiter=',',
+                            quotechar='"', quoting=csv.QUOTE_ALL)
     # Write tasks
-    csv_writer.writerow([employee_id, employee_name,
-                         todo.get("completed"), todo.get("title")])
+    for todo in todos:
+        csv_writer.writerow([todo.get('"'), employee_id, employee_name,
+                             todo.get("completed"), todo.get("title"), todo.get('"')])
 
 print(f"Data exported to {csv_filename}")
